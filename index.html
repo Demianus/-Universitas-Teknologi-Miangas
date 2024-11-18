@@ -36,8 +36,8 @@
     <!-- Hero Section -->
     <main>
       <!-- About Section -->
-      <section id="about">
-        <div class="container">
+      <section id="about" class="mb-4">
+        <div>
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">
               <h2 class="display-4">Tentang Kampus</h2>
@@ -59,61 +59,198 @@
       </section>
 
       <!-- Programs Section -->
-      <section id="programs">
-        <h2>Program Studi</h2>
-        <div class="program-list">
-          <div>
-            <h3>Teknik Informatika</h3>
-            <p>
-              Mempelajari teknologi perangkat lunak, kecerdasan buatan, dan
-              pemrograman.
-            </p>
-          </div>
-          <div>
-            <h3>Sistem Informasi</h3>
-            <p>Fokus pada pengelolaan data, teknologi informasi, dan bisnis.</p>
-          </div>
-          <div>
-            <h3>Teknik Elektro</h3>
-            <p>Mempelajari elektronika, robotika, dan energi terbarukan.</p>
+      <section id="programs" class="mb-4">
+        <div class="container">
+          <h2 class="text-center mb-4">Program Studi</h2>
+          <div class="row justify-content-center">
+            <!-- Teknik Informatika -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="assets/img/teknik-informatika.jpg"
+                  class="card-img-top"
+                  alt="Teknik Informatika"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Teknik Informatika</h5>
+                  <p class="card-text">
+                    Program yang fokus pada pengembangan perangkat lunak,
+                    pemrograman, kecerdasan buatan, dan teknologi jaringan untuk
+                    mendukung inovasi di era digital.
+                  </p>
+                  <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                </div>
+              </div>
+            </div>
+            <!-- Sistem Informasi -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="assets/img/sistem-informasi.jpg"
+                  class="card-img-top"
+                  alt="Sistem Informasi"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Sistem Informasi</h5>
+                  <p class="card-text">
+                    Menggabungkan teknologi informasi dengan manajemen bisnis
+                    untuk menciptakan solusi berbasis sistem yang efisien dan
+                    efektif dalam pengelolaan data.
+                  </p>
+                  <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                </div>
+              </div>
+            </div>
+            <!-- Manajemen -->
+            <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                <img
+                  src="assets/img/manajemen.jpg"
+                  class="card-img-top"
+                  alt="Manajemen"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Manajemen</h5>
+                  <p class="card-text">
+                    Membekali mahasiswa dengan kemampuan kepemimpinan, strategi
+                    bisnis, dan pengelolaan sumber daya untuk menghadapi
+                    tantangan dunia usaha modern.
+                  </p>
+                  <a href="#" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- News Section -->
-      <section id="news">
-        <h2>Berita Terbaru</h2>
-        <article>
-          <h3>Mahasiswa Raih Juara Nasional</h3>
-          <p>
-            Mahasiswa Universitas Teknologi Miangas berhasil meraih juara 1
-            dalam kompetisi teknologi tingkat nasional.
-          </p>
-        </article>
-        <article>
-          <h3>Workshop AI</h3>
-          <p>
-            Universitas mengadakan workshop kecerdasan buatan untuk meningkatkan
-            kompetensi mahasiswa.
-          </p>
-        </article>
+      <section id="news" class="mb-4">
+        <div class="container">
+          <h2 class="text-center mb-4">Berita Terbaru</h2>
+          <div class="card-group">
+            <div class="card">
+              <img
+                src="assets/img/berita1.jpg"
+                class="card-img-top"
+                alt="Orkestra Mahasiswa"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mahasiswa Raih Juara Kompetisi Orkestra Nasional
+                </h5>
+                <p class="card-text">
+                  Tim orkestra Universitas Teknologi Miangas berhasil meraih
+                  juara 1 dalam Kompetisi Orkestra Nasional. Penampilan mereka
+                  yang memukau dengan perpaduan klasik dan modern mendapat
+                  apresiasi tinggi dari para juri.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 1 hour ago</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="assets/img/berita2.jpg"
+                class="card-img-top"
+                alt="Business Plan Winner"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Mahasiswa Universitas Menang Lomba Business Plan
+                </h5>
+                <p class="card-text">
+                  Tim mahasiswa jurusan Manajemen memenangkan lomba Business
+                  Plan tingkat nasional. Ide bisnis inovatif mereka yang
+                  berbasis teknologi ramah lingkungan berhasil menarik perhatian
+                  investor dan juri.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 hours ago</small
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img
+                src="assets/img/berita3.jpg"
+                class="card-img-top"
+                alt="Pameran Karya Seni"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Sukses Besar: Pameran Karya Seni Mahasiswa
+                </h5>
+                <p class="card-text">
+                  Fakultas Seni dan Desain menggelar pameran karya seni bertajuk
+                  "Harmoni Warna dan Cerita". Acara ini menampilkan lukisan,
+                  instalasi seni, dan multimedia yang menunjukkan kreativitas
+                  luar biasa mahasiswa.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 5 hours ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
-        <h2>Kontak</h2>
-        <p><strong>Alamat:</strong> Jalan Teknologi No. 1, Miangas</p>
-        <p><strong>Email:</strong> info@univmiangas.ac.id</p>
-        <form action="#" method="post">
-          <label for="name">Nama:</label>
-          <input type="text" id="name" name="name" required /><br />
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-          <label for="message">Pesan:</label><br />
-          <textarea id="message" name="message" rows="5" required></textarea
-          ><br />
-          <button type="submit">Kirim</button>
-        </form>
+      <section id="contact" class="mb-4">
+        <div class="container p-5">
+          <h2 class="text-center mb-4">Kontak</h2>
+          <div class="row">
+            <!-- Bagian Alamat -->
+            <div class="col-md-6">
+              <h5>Alamat</h5>
+              <p><strong>Lokasi:</strong> Jalan Teknologi No. 1, Miangas</p>
+              <p><strong>Email:</strong> info@univmiangas.ac.id</p>
+            </div>
+            <!-- Bagian Formulir -->
+            <div class="col-md-6 border rounded-3 border-primary-subtle p-4">
+              <form action="" method="post">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Nama</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-control"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Pesan</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    class="form-control"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
