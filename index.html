@@ -20,31 +20,53 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header class="bg-primary text-white">
-      <h1>Universitas Teknologi Miangas</h1>
+    <header
+      class="bg-primary text-white py-4 px-2 text-center mb-2"
+      id="header"
+    >
+      <h1 class="m-0">Universitas Teknologi Miangas</h1>
       <p>Mencetak Generasi Unggul untuk Masa Depan</p>
       <nav>
-        <ul>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#programs">Program Studi</a></li>
-          <li><a href="#news">Berita</a></li>
-          <li><a href="#contact">Kontak</a></li>
+        <ul class="d-flex justify-content-center list-unstyled mt-2 mx-0 mb-0">
+          <li class="mx-3">
+            <a href="#about" class="text-white text-decoration-none">Tentang</a>
+          </li>
+          <li class="mx-3">
+            <a href="#programs" class="text-white text-decoration-none"
+              >Program Studi</a
+            >
+          </li>
+          <li class="mx-3">
+            <a href="#news" class="text-white text-decoration-none">Berita</a>
+          </li>
+          <li class="mx-3">
+            <a href="#contact" class="text-white text-decoration-none"
+              >Kontak</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <main>
+    <main class="container-lg m-auto p-20 bg-white mb-4">
       <!-- About Section -->
       <section id="about" class="mb-4">
         <div>
-          <div class="row align-items-center justify-content-center">
+          <div
+            class="row align-items-center justify-content-center text-center"
+          >
             <div class="col-lg-6">
               <h2 class="display-4">Tentang Kampus</h2>
               <p class="lead">
                 Universitas Teknologi Miangas adalah institusi pendidikan tinggi
                 yang berdedikasi untuk mencetak generasi unggul di bidang
                 teknologi, sains, dan seni.
+                <br />
+                Kami menawarkan berbagai program studi yang dirancang untuk
+                mempersiapkan mahasiswa menghadapi tantangan dunia kerja dan
+                berkontribusi pada pengembangan masyarakat melalui inovasi dan
+                riset.
               </p>
             </div>
             <div class="col-lg-6">
@@ -53,6 +75,15 @@
                 alt="Universitas Teknologi Miangas"
                 class="img-fluid"
               />
+            </div>
+            <div class="my-4">
+              <button
+                type="button"
+                class="btn btn-outline-primary"
+                onclick="document.getElementById('programs').scrollIntoView({behavior: 'smooth'});"
+              >
+                Pelajari Lebih Lanjut
+              </button>
             </div>
           </div>
         </div>
@@ -137,7 +168,7 @@
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  Mahasiswa Raih Juara Kompetisi Orkestra Nasional
+                  Mahasiswa Raih Juara 1 Kompetisi Orkestra Nasional
                 </h5>
                 <p class="card-text">
                   Tim orkestra Universitas Teknologi Miangas berhasil meraih
@@ -160,7 +191,8 @@
               />
               <div class="card-body">
                 <h5 class="card-title">
-                  Mahasiswa Universitas Menang Lomba Business Plan
+                  Mahasiswa Universitas Miangas Juara 2 Lomba Business Plan
+                  Nasional
                 </h5>
                 <p class="card-text">
                   Tim mahasiswa jurusan Manajemen memenangkan lomba Business
@@ -204,14 +236,31 @@
 
       <!-- Contact Section -->
       <section id="contact" class="mb-4">
-        <div class="container p-5">
+        <div class="container py-2 px-4">
           <h2 class="text-center mb-4">Kontak</h2>
-          <div class="row">
+          <div class="row align-items-center justify-content-center">
             <!-- Bagian Alamat -->
             <div class="col-md-6">
-              <h5>Alamat</h5>
-              <p><strong>Lokasi:</strong> Jalan Teknologi No. 1, Miangas</p>
-              <p><strong>Email:</strong> info@univmiangas.ac.id</p>
+              <div class="d-block">
+                <h5>Alamat</h5>
+                <p><strong>Lokasi:</strong> Jalan Teknologi No. 1, Miangas</p>
+                <p><strong>Email:</strong> info@univmiangas.ac.id</p>
+              </div>
+              <div class="d-block">
+                <h5>Maps</h5>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    class="embed-responsive-item rounded-3 border-primary-subtle"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53427.67476863429!2d126.56025876542405!3d5.561729295644417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f10900178b61f3%3A0x2e4f20bdb7f00e32!2sMiangas%20Indonesia!5e0!3m2!1sid!2sid!4v1731988764141!5m2!1sid!2sid"
+                    width="400"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
             <!-- Bagian Formulir -->
             <div class="col-md-6 border rounded-3 border-primary-subtle p-4">
@@ -256,20 +305,35 @@
 
     <!-- Footer Section -->
     <footer
-      class="d-flex flex-column d-block align-items-center justify-content-center p-4 bg-primary text-white text-center"
+      class="d-flex flex-column d-block align-items-center justify-content-center py-2 bg-primary text-white text-center mt-2"
       id="footer"
     >
       <div class="d-flex gap-3">
         <p>Contact us: admin@utm.edu | +123 456 7890</p>
         <div class="d-flex gap-3">
           <div class="link-underline-dark">
-            <a href="#facebook">Facebook</a>
+            <a
+              href="#facebook"
+              class="text-decoration-none"
+              style="color: #f9a1e1"
+              >Facebook</a
+            >
           </div>
           <div class="link-underline-dark">
-            <a href="#twitter">Twitter</a>
+            <a
+              href="#twitter"
+              class="text-decoration-none"
+              style="color: #f9a1e1"
+              >Twitter</a
+            >
           </div>
           <div class="link-underline-dark">
-            <a href="#instagram">Instagram</a>
+            <a
+              href="#instagram"
+              class="text-decoration-none"
+              style="color: #f9a1e1"
+              >Instagram</a
+            >
           </div>
         </div>
       </div>
